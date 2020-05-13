@@ -35,3 +35,5 @@ Mingtao Guo
 
 Xi'an University of technology
 
+# Reference
+[1]. Shaham, Tamar Rott, Tali Dekel, and Tomer Michaeli. "Singan: Learning a generative model from a single natural image." Proceedings of the IEEE International Conference on Computer Vision. 2019.
