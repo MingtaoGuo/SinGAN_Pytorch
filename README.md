@@ -1,6 +1,11 @@
 # SinGAN_Pytorch
 Reimplementing the paper "SinGAN: Learning a Generative Model from a Single Natural Image"
-
+# Requirements
+1. python3
+2. torch1.1.0
+3. pillow
+4. numpy
+5. imageio
 # Training phase what you need to do
 1. Modifying the image path in "train.py"
 2. Executing the file "train.py"
