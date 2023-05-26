@@ -74,6 +74,8 @@ def train_single_scale(Gs, Ds, imgs, sigmas, fixed_Zs):
                 print("Iteration: %d, D_loss: %f, G_loss: %f" % (i, D_loss, G_loss))
             schedulerD.step()
             schedulerG.step()
+        fixed_Zs.append(z_rec)
+
     else:
         for i in range(2000):
             init_sigma = 0.1
@@ -103,9 +105,9 @@ def train_single_scale(Gs, Ds, imgs, sigmas, fixed_Zs):
                 print("Iteration: %d, D_loss: %f, G_loss: %f" % (i, D_loss, G_loss))
             schedulerD.step()
             schedulerG.step()
+        fixed_Zs.append(torch.zeros_like(z))
 
     sigmas.append(sigma)
-    fixed_Zs.append(z)
     return G, D
 
 
